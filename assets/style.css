@@ -1,0 +1,29 @@
+@font-face { font-family: 'Instrument Serif'; src: url('/assets/instrument-serif_normal_400.ttf'); } 
+@font-face {
+    font-family: "Instrument Serif";
+    src: url("/assets/instrument-serif_italic_400.ttf");
+    font-style: italic;
+}
+
+body {
+    background-color: #eae8db;
+	text-align: center;
+}
+
+* {
+    color: #29281f;
+    font-family: 'Instrument Serif', Fallback, serif;
+}
+
+h1, h3 {
+	letter-spacing: -0.02em;
+	font-weight: 400;
+	font-size: 2rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+ul {
+	list-style-position: inside;
+	list-style-type: disclosure-closed;
+}
