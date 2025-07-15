@@ -7,8 +7,8 @@ help: ## Show help message
 
 .PHONY: build
 build: ## builds the development docker image
-	docker build -t static-site .
+	docker build -f Dockerfile.dev -t static-site .
 
 .PHONY: dev
 dev: build ## serves the website for development purposes
-	docker run --rm -p 8090:8080 -v .:/app static-site
+	docker run --rm --name denny-blaine -p 8090:8080 -v .:/app static-site
